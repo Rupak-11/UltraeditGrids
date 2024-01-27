@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+body{
+    background: linear-gradient(to right , black , rgb(32, 26, 26));
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+}
+    .navbar{
+        height: 10vh;
+        width: 100%;
+        background: black;
+    }
+
+    .container{
+   
+        height: 90vh;
+        width: 70%;
+        /* background: gray; */
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows:2fr 2fr 2fr ;
+        column-gap: 15px;
+        row-gap: 15px;
+        margin: auto;
+        
+    }
+    h3{
+        font-size: 2rem;
+        color: azure;
+        text-align: center;
+    }
+    p{
+        color: whitesmoke;
+        text-align: center;
+    }
+    .item{
+        
+        /* height: 150px;
+        width: 150px; */
+        /* background: purple; */
+        place-self: center;
+    }
+
+    button{
+        height: 40px;
+        width: 150px;
+        border-radius: 7px;
+        padding: 5px 5px;
+        margin: 2px 3px;
+    }
+
+    button a{
+        text-decoration: none;
+        list-style: none;
+        color: aliceblue;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    #btn1{
+        padding: 3px 4px;
+        background: lawngreen;
+        transition: all ease 0.5s;
+    }
+
+    #btn1:hover{
+        background: rgb(2, 125, 2);
+        cursor: pointer;
+    }
+    #btn2{
+        padding: 3px 4px;
+        background: rgb(10, 127, 121);
+        transition: all ease 0.5s;
+    }
+    #btn2:hover{
+        background: royalblue;
+        cursor: pointer;
+    }
+
+
+    #logo img{
+        height: 60px;
+        /* filter: invert(100%); */
+        position: absolute;
+        top:5%;
+        left: 5%;
+        
+    }
+
+    .nav{
+        height: 10vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+        margin: 1px 15px;
+        
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 170px;
+        padding: 30px 5px;
+        gap:30px;
+        
+    }
+
+    .nav ul li{
+        list-style: none;
+        font-size: 1.2rem;
+        transition: all ease-in-out 0.5s;
+    }
+
+    .nav ul li:hover{
+        cursor: pointer;
+        color: greenyellow;
+    }
+
+    @media (min-width:300px) and (max-width:700px){
+        .container{
+            margin-top: 450px;
+            height: 100vh;
+            width: 100%;
+            /* background: gray; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .item{
+            margin: 15px 15px;
+        padding: 10px 12px;
+        
+           
+        }
+
+        .nav ul li{
+            display: none;
+            list-style: none;
+            font-size: 1.2rem;
+            transition: all ease-in-out 0.5s;
+        }
+        #logo img{
+            height: 60px;
+            position: relative;
+            top:5%;
+            left: 5%;
+            
+        }
+
+        .nav{
+            height: 10vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin: -65px 15px;
+            
+        }
+    }
